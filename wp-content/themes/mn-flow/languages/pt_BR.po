@@ -1,0 +1,499 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MCN Theme For Fun Lang\n"
+"POT-Creation-Date: 2014-03-22 01:33-0300\n"
+"PO-Revision-Date: 2014-03-22 01:33-0300\n"
+"Last-Translator: \n"
+"Language-Team: MCN <mateusneves@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;_x;esc_attr_e\n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/mateus-neves-master/content/"
+"themes/mn-flow\n"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/404.php:16
+msgid "Oops! Page not found."
+msgstr "Oops! Página não encontrada."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Parece que nada foi encontrado neste local. Talvez queira tentar fazer uma "
+"busca?"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:18
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Arquivos Diários: %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:20
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Arquivos Mensais: %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:20
+msgid "F Y"
+msgstr "F Y"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:23
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Arquivos Anuais: %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:23
+msgid "Y"
+msgstr "Y"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:25
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Arquivos da Tag: %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:27
+#, php-format
+msgid "All posts by %s"
+msgstr "Posts por %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:29
+msgid "Archives"
+msgstr "Arquivos"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/archive.php:56
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/category.php:39
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/index.php:47
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/page.php:28
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/search.php:43
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/single.php:27
+msgid "Sorry, no posts matched your criteria."
+msgstr "Desculpe, mas nenhum post foi encontrado."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/category.php:15
+#, php-format
+msgid "Category: %s"
+msgstr "Categoria: %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:27
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:45
+msgid "Comment navigation"
+msgstr "Navegação dos Comentários"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:28
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:46
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentários mais antigos"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:29
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr "Comentários mais recentes &rarr;"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:52
+msgid "Comments are closed."
+msgstr "Comentários estão fechados."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:61
+msgid "Leave a Reply"
+msgstr "Deixe uma Resposta"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:62
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deixe uma Resposta para %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:63
+msgid "Cancel Reply"
+msgstr "Cancelar Resposta"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:64
+msgid "Post Comment"
+msgstr "Enviar Comentário"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:66
+msgid "Comment"
+msgstr "Comentário"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:72
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Você deve estar <a href=\"%s\">logado</a> para enviar um comentário."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:78
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Logado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Sair\">Sair?"
+"</a>"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:85
+msgid "Your email address will not be published."
+msgstr "Seu endereço de email não será publicado."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:93
+msgid "Name"
+msgstr "Nome"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:99
+msgid "Email"
+msgstr "Email"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/comments.php:106
+msgid "Website"
+msgstr "Website"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:21
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:94
+msgid ", "
+msgstr ", "
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:29
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:99
+msgid ""
+"<span class=\"el-icon-comment basic-color-icons\"></span> No comments yet"
+msgstr ""
+"<span class=\"el-icon-comment basic-color-icons\"></span> Nenhum comentário"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:29
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:99
+msgid "<span class=\"el-icon-comment basic-color-icons\"></span> 1 comment"
+msgstr "<span class=\"el-icon-comment basic-color-icons\"></span> 1 comentário"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:29
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:99
+#, php-format
+msgid "<span class=\"el-icon-comment basic-color-icons\"></span> % comments"
+msgstr ""
+"<span class=\"el-icon-comment basic-color-icons\"></span> % comentários"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:57
+msgid "Read more"
+msgstr "Continue lendo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:60
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:109
+msgid "Edit"
+msgstr "Editar"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/content.php:106
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:66
+msgid "Theme by"
+msgstr "Tema por"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:66
+msgid "http://mateusneves.com/themes"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:66
+msgid "MN Themes"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:69
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:69
+msgid "Publishing platform"
+msgstr "Plataforma de Publicação"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/footer.php:69
+#, php-format
+msgid "Proudly powered by %s <span class=\"el-icon-wordpress\"></span>"
+msgstr ""
+"Orgulhosamente desenvolvido com %s <span class=\"el-icon-wordpress\"></span>"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:62
+msgid "Primary"
+msgstr "Principal"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:101
+msgid "Load more..."
+msgstr "Carregar mais..."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:191
+msgid "Footer Left Sidebar"
+msgstr "Coluna Lateral Esquerda do Rodapé"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:193
+msgid "Widgets in this area will be shown on the left-hand side on footer."
+msgstr ""
+"Os widgets nesta área serão mostrados na coluna do lado esquerdo do rodapé."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:199
+msgid "Footer Middle Sidebar"
+msgstr "Coluna Lateral Central do Rodapé"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:201
+msgid "Widgets in this area will be shown on the middle-hand side on footer."
+msgstr "Os widgets nesta área serão mostrados na coluna central do rodapé."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:207
+msgid "Footer Right Sidebar"
+msgstr "Coluna Lateral Direita do Rodapé"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:209
+msgid "Widgets in this area will be shown on the right-hand side on footer."
+msgstr ""
+"Os widgets nesta área serão mostrados na coluna do lado direito do rodapé."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:227
+msgid "<span class=\"el-icon-chevron-left\"></span> Older posts"
+msgstr "<span class=\"el-icon-chevron-left\"></span> Posts anteriores"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:232
+msgid "Newer posts <span class=\"el-icon-chevron-right\"></span>"
+msgstr "Posts mais recentes <span class=\"el-icon-chevron-right\"></span>"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions.php:363
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:85
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:86
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:307
+msgid "Theme Options"
+msgstr "Opções do Tema"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:173
+msgid "Save Options"
+msgstr "Salvar Opções"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:174
+msgid "Restore Defaults"
+msgstr "Restaurar Padrões"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:174
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+"Clique OK para reiniciar. Todas configurações das opções do tema serão "
+"perdidas."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:205
+msgid "Default options restored."
+msgstr "Opções padrões restauradas."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-framework-admin.php:259
+msgid "Options saved."
+msgstr "Opções salvas."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr "Nenhum arquivo selecionado"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:66
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr "Upload"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:68
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr "Excluir"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "Atualize sua versão do WordPress para um suporte de mídias completo."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr "Ver Arquivo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr "Não Repetir"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr "Repetir Horizontalmente"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr "Repetir Verticalmente"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr "Repetir Tudo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr "Top Left"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr "Top Center"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr "Top Right"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr "Middle Left"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr "Middle Center"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr "Middle Right"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr "Bottom Left"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr "Bottom Center"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr "Bottom Right"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr "Rolagem Normal"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr "Fixo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr "Normal"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr "Itálico"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr "Negrito"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/functions/theme-options/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr "Negrito Itálico"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/inc/back-compat.php:22
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/inc/back-compat.php:30
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/inc/back-compat.php:41
+#, php-format
+msgid ""
+"MN Flow requires at least WordPress version 3.6. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+"MN Flow requer pelo menos a versão 3.6 do WordPress. Você está executando a "
+"versão %s. Por favor, atualize e tente novamente."
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:37
+msgid "Appearance"
+msgstr "Aparência"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:41
+msgid "Colorpicker"
+msgstr "Seleção de cor"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:42
+msgid "Select the predominant color of website"
+msgstr "Selecione a cor predominante do website"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:48
+msgid "Title background color"
+msgstr "Cor de fundo do título"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:49
+msgid "Apply the predominant color as the background of the title of the site"
+msgstr "Aplique a cor predominante no fundo do título do site"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:54
+msgid "Select a Number"
+msgstr "Selecione um número"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:55
+msgid "Number of recent posts featured on Home Page"
+msgstr "Quantidade de posts recentes destacados na Página Principal"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:63
+msgid "Content"
+msgstr "Conteúdo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:67
+msgid "Archives content mode"
+msgstr "Modo de conteúdo para arquivo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:68
+msgid "Select the archive content mode"
+msgstr "Selecione o modo de exibição do conteúdo para os arquivos"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:72
+msgid "Show content excerpt"
+msgstr "Exibir resumo do conteúdo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/options.php:72
+msgid "Show full content"
+msgstr "Exibir conteúdo completo"
+
+#: /Applications/MAMP/htdocs/mateus-neves-master/content/themes/mn-flow/search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados da Busca por: %s"
+
+#~ msgid "Proudly powered by %s"
+#~ msgstr "Orgulhosamente desenvolvido com %s"
+
+#~ msgid "Congratulations, you have reached the end of the internet."
+#~ msgstr "Parabéns, você chegou ao fim da internet."
+
+#~ msgid "Favicon"
+#~ msgstr "Favicon"
+
+#~ msgid "Upload your Favicon PNG image 16x16"
+#~ msgstr "Envie sua imagem de Favicon PNG 16x16"
+
+#~ msgid "Settings"
+#~ msgstr "Configurações"
+
+#~ msgid "One"
+#~ msgstr "Um"
+
+#~ msgid "Two"
+#~ msgstr "Dois"
+
+#~ msgid "Three"
+#~ msgstr "Três"
+
+#~ msgid "Four"
+#~ msgstr "Quatro"
+
+#~ msgid "Five"
+#~ msgstr "Cinco"
+
+#~ msgid "French Toast"
+#~ msgstr "Brinde Fraces"
+
+#~ msgid "Pancake"
+#~ msgstr "Panqueca"
+
+#~ msgid "Omelette"
+#~ msgstr "Omelete"
+
+#~ msgid "Crepe"
+#~ msgstr "Crepe"
+
+#~ msgid "Waffle"
+#~ msgstr "Waffle"
+
+#~ msgid "No color selected by default."
+#~ msgstr "Nenhuma cor selecionada por padrão"
+
+#~ msgid "Footer"
+#~ msgstr "Rodapé"

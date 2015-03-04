@@ -1,0 +1,78 @@
+body#tinymce.wp-editor { 
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+
+body#tinymce.wp-editor a {
+    color: #4CA6CF;
+}
+
+body#tinymce.wp-editor img, body#tinymce.wp-editor div {
+	width: auto !important;
+	max-width: 100%;
+	height: auto;
+}
+
+body#tinymce.wp-editor .entry-content img {
+	margin: 0 0 1.5em 0;
+}
+body#tinymce.wp-editor .alignleft,
+body#tinymce.wp-editor img.alignleft { 
+	display: inline;
+	float: left;
+  margin-right: 1.5em;
+}
+body#tinymce.wp-editor .alignright,
+body#tinymce.wp-editor img.alignright {
+	display: inline;
+	float: right;
+  margin-left: 1.5em;
+}
+body#tinymce.wp-editor .aligncenter,
+body#tinymce.wp-editor img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+body#tinymce.wp-editor .wp-caption {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+body#tinymce.wp-editor .wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+body#tinymce.wp-editor .wp-caption p.wp-caption-text {
+	margin: 0;
+}
+body#tinymce.wp-editor .wp-smiley { 
+	max-height: 1em;
+	margin:0 !important;
+}
+body#tinymce.wp-editor .gallery dl {
+	margin: 0;
+}
+body#tinymce.wp-editor .gallery-caption {
+	margin:-1.5em 0 0 0;
+}
+
+
+/* Pullquotes
+-------------------------------------------------------------- */
+
+body#tinymce.wp-editor blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+	text-align: right;
+	width: 33%;
+}
+body#tinymce.wp-editor blockquote.right {
+	float: right;
+	margin-left: 20px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
