@@ -3,21 +3,22 @@ var sass = require('gulp-sass');
 var browsersync = require('browser-sync');
 
 gulp.task('styles', function() {
-	gulp.src('wp-content/themes/zeroFour/style.scss')
+	gulp.src('wp-content/themes/custom/style.scss')
 		.pipe(sass())
-		.pipe(gulp.dest('wp-content/themes/zeroFour/'))
+		.pipe(gulp.dest('wp-content/themes/custom/'))
 		.pipe(browsersync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
 	browsersync({
-		server: { baseDir: './'}
+		// server: { baseDir: './'}
+		proxy : 'localhost:8888'
 	});
 });
 
 gulp.task('watch', function() {
-	gulp.watch('styles/style.scss', ['styles']);
-	gulp.watch('*.html', browsersync.reload);
+	gulp.watch('wp-content/themes/custom/style.scss', ['styles']);
+	// gulp.watch('*.php', browsersync.reload());
 });
 
 gulp.task('default', ['browser-sync', 'styles', 'watch']);
