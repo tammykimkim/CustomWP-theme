@@ -44,7 +44,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 // Adding Google Fonts & Font Awesome links
 // Add Google Fonts and Font Awesome
 	function load_fonts() {
-		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900,300italic|Source+Serif+Pro:400,600,700|Open+Sans');
+		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,600,300,700');
 		wp_enqueue_style('google-fonts');
 
 		wp_register_style('font-awesome', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
@@ -53,48 +53,20 @@ add_action( 'after_setup_theme', 'theme_setup' );
 	}
 	add_action('wp_print_styles', 'load_fonts');
 
-
 /* Add all our JavaScript files here.
 We'll let WordPress add them to our templates automatically instead
 of writing our own script tags in the header and footer. */
 
-function hackeryou_scripts() {
-
-	//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
-	wp_deregister_script('jquery');
-  wp_enqueue_script(
-  	'jquery',
-  	"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
-  	false, //dependencies
-  	null, //version number
-  	true //load in footer
-  );
-
-  // wp_enqueue_script('jquery-ui',
-  // 	"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js",
-  // 	false, //dependencies
-  // 	null, //version number
-  // 	true //load in footer
-  // );
-
-  wp_enqueue_script(
-    'plugins', //handle
-    get_template_directory_uri() . '/js/plugins.js', //source
-    false, //dependencies
-    null, // version number
-    true //load in footer
-  );
-
-  wp_enqueue_script(
-    'scripts', //handle
-    get_template_directory_uri() . '/js/scripts.js', //source
-    array( 'jquery', 'plugins'), //dependencies
-    null, // version number
-    true //load in footer
-  );
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function add_scripts() {
+  wp_deregister_script( 'jquery' );
+  wp_enqueue_script('jquery',            'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"',   array(),         '1.11.1',false);
+  wp_enqueue_script('scripts',           get_bloginfo('template_directory') . "/js/scripts.js",                  array('jquery'), '1.0.0', false);
 }
 
-add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
+add_action( 'wp_enqueue_scripts', 'add_scripts' );
 
 
 /* Custom Title Tags */

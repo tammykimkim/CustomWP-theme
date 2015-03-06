@@ -1,9 +1,20 @@
-<footer>
+
+<footer class="max-container">
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-    <?php wp_nav_menu(array('theme_location' => 'footer')); ?>
+
+    <p class="copyright">
+	    &copy; HackerYou <?php echo date('Y'); ?>
+    </p>
+
+		<nav class="top-menu-hidden bottom">
+		  <?php wp_nav_menu( array(
+		    'container' => false,
+		    'theme_location' => 'primary'
+		  )); ?>
+		</nav>
   </div>
 </footer>
+
 
 <script>
 /* Google Analytics! */

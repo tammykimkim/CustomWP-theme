@@ -8,7 +8,6 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <?php // Load our CSS ?>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 
@@ -18,6 +17,8 @@
 
 <body <?php body_class(); ?>>
 
+<div class="max-container">
+  
 <header class="top-menu">
 
   <div>
@@ -33,6 +34,8 @@
     </div>
   </div>
 
+<!-- Add Flexslider here -->
+
     <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
@@ -42,3 +45,4 @@
 
 </header><!--/.header-->
 
+</div> <!-- end max-container -->

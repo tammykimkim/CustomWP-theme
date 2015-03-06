@@ -168,10 +168,14 @@ img.alignright {
   clear: both; }
 
 /* =============================================================================
+                   Sass Mixins Styling
+   ========================================================================== */
+/* =============================================================================
                    Default Styling
    ========================================================================== */
 body {
-  color: #333; }
+  color: #333;
+  font: 100% 'Montserrat', sans-serif; }
 
 body.page-id-14 {
   background: goldenrod; }
@@ -238,6 +242,14 @@ pre {
 h1 {
   text-align: center; }
 
+.max-container {
+  max-width: 1500px;
+  margin: 0 auto; }
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto; }
+
 /* =============================================================================
                    Sidebar
    ========================================================================== */
@@ -256,7 +268,13 @@ h1 {
                    Footer
    ========================================================================== */
 footer {
-  clear: both; }
+  clear: both;
+  padding: 5px; }
+  footer .copyright {
+    float: left; }
+
+.bottom ul.menu {
+  display: inline-block; }
 
 /* =============================================================================
                    Navigation
@@ -264,17 +282,19 @@ footer {
 ul.menu {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   background: #fff;
   color: #333;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
-  height: 0; }
+  height: 0;
+  display: none;
+  font: 12px 'Montserrat', sans-serif; }
 
 ul.menu li {
   display: inline;
-  margin-right: 10px; }
+  margin-right: 11px;
+  letter-spacing: 2px; }
 
 ul.menu li.current_page_item a {
   color: #333; }
@@ -300,11 +320,6 @@ ul.menu li a:hover {
 header.top-menu {
   height: 300px;
   background: #ccc; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: red; }
 
 /* =============================================================================
                    Comment Styling
