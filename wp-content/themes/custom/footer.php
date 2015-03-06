@@ -1,6 +1,6 @@
 
 <footer class="max-container">
-  <div class="container">
+  <div class="container tac">
 
     <p class="copyright">
 	    &copy; HackerYou <?php echo date('Y'); ?>
@@ -11,8 +11,17 @@
 		    'container' => false,
 		    'theme_location' => 'primary'
 		  )); ?>
+			<div class="social">
+				<?php wp_nav_menu( array(
+			    'container' => false,
+			    'menu' => 'social'
+			  )); ?>
+			</div>
 		</nav>
   </div>
+
+
+</p>
 </footer>
 
 

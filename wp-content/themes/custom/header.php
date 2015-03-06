@@ -18,31 +18,32 @@
 <body <?php body_class(); ?>>
 
 <div class="max-container">
-  
-<header class="top-menu">
-
-  <div>
-    <nav class="top-menu-hidden">
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_location' => 'primary'
-      )); ?>
-    </nav>
+  <div class="container">
     
-    <div class="clickme">
-      <i class="fa fa-coffee"></i>
-    </div>
-  </div>
+    <header class="top-menu">
 
-<!-- Add Flexslider here -->
+      <div>
+        <nav class="top-menu-hidden">
+          <?php wp_nav_menu( array(
+            'container' => false,
+            'theme_location' => 'primary'
+          )); ?>
+        </nav>
+        
+        <div class="clickme">
+          <i class="fa fa-coffee"></i>
+        </div>
+      </div>
 
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
+    <!-- Add Flexslider here -->
+
+        <h1>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
 
 
-</header><!--/.header-->
-
+    </header><!--/.header-->
+  </div>  <!-- end container -->
 </div> <!-- end max-container -->

@@ -275,6 +275,15 @@ footer {
 
 .bottom ul.menu {
   display: inline-block; }
+.bottom .social {
+  float: right;
+  display: inline-block; }
+
+.tac {
+  text-align: center; }
+
+#menu-social {
+  padding: 0; }
 
 /* =============================================================================
                    Navigation

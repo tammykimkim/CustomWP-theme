@@ -170,18 +170,30 @@ h1 {
 footer {
   clear:both;
   padding: 5px;
-  
+
     .copyright {
       float: left;
     }
 }
 
-
 .bottom {
   ul.menu {
     display: inline-block;
   }
+    .social {
+      float: right;
+      display: inline-block;
+    }
 }
+
+.tac {
+  text-align: center;
+}
+
+#menu-social {
+  padding: 0;
+}
+
 
 /* =============================================================================
                    Navigation
