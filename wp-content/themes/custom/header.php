@@ -8,7 +8,9 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <?php // Load our CSS ?>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
 
   <?php wp_head(); ?>
 <!-- This is the header hook for plugins to use -->
@@ -17,17 +19,18 @@
 <body <?php body_class(); ?>>
 
 <header class="top-menu">
-  <div class="container">
 
-    <nav class="top-hidden-menu">
+  <div>
+    <nav class="top-menu-hidden">
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_location' => 'primary'
       )); ?>
     </nav>
-
-  <div class="clickme"> 
-    <i class="fa fa-coffee fa-2x"></i>
+    
+    <div class="clickme">
+      <i class="fa fa-coffee"></i>
+    </div>
   </div>
 
     <h1>
@@ -36,6 +39,6 @@
       </a>
     </h1>
 
-  </div> <!-- /.container -->
+
 </header><!--/.header-->
 

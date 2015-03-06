@@ -64,19 +64,18 @@ function hackeryou_scripts() {
 	wp_deregister_script('jquery');
   wp_enqueue_script(
   	'jquery',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+  	"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
   	false, //dependencies
   	null, //version number
   	true //load in footer
   );
 
-  wp_enqueue_script(
-  	'jquery',
-  	"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js",
-  	false, //dependencies
-  	null, //version number
-  	true //load in footer
-  );
+  // wp_enqueue_script('jquery-ui',
+  // 	"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js",
+  // 	false, //dependencies
+  // 	null, //version number
+  // 	true //load in footer
+  // );
 
   wp_enqueue_script(
     'plugins', //handle
@@ -89,7 +88,7 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/scripts.js', //source
-    array( 'jquery', 'plugins' ), //dependencies
+    array( 'jquery', 'plugins'), //dependencies
     null, // version number
     true //load in footer
   );

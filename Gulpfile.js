@@ -4,7 +4,9 @@ var browsersync = require('browser-sync');
 
 gulp.task('styles', function() {
 	gulp.src('wp-content/themes/custom/style.scss')
-		.pipe(sass())
+		.pipe(sass({
+			errLogToConsole: true
+		}))
 		.pipe(gulp.dest('wp-content/themes/custom/'))
 		.pipe(browsersync.reload({stream: true}))
 });

@@ -37,14 +37,13 @@ img.alignleft     { padding-right: 5px;}
 img.alignright    { padding-left: 5px; }
 .clear        { width:100%; float:left; clear:both;}
 
-
 /* =============================================================================
                    Default Styling
    ========================================================================== */
 
+
 body {
   color:#333;
-
 }
 
 body.page-id-14 {
@@ -141,8 +140,6 @@ h1 {
     }
 
 
-
-
 /* =============================================================================
                    Footer
    ========================================================================== */
@@ -167,6 +164,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
+    height: 0;
   }
     ul.menu li {
       display:inline;
@@ -184,21 +182,12 @@ footer {
           color: #ccc;
         }
 
-.container {
-  max-width:1200px;
-  margin:0 auto;
-  background: #ccc;
-  border-top: 5px solid #fff;
-}
-.top-hidden-menu {
-  display: none;
-}
   .clickme {
     cursor: pointer;
     text-align: center;
-    padding: 25px;
-    top: -25px;
     position: relative;
+    display: block;
+    border-top: 5px solid #fff;
   }
   .fa {
     background: #fff;
@@ -207,9 +196,14 @@ footer {
   }
 
 header.top-menu {
-  height: 200px;
-  background: pink;
+  height: 300px;
+  background: #ccc;
 }
+  .container {
+    max-width:1200px;
+    margin:0 auto;
+    background: red;
+  }
 
 /* =============================================================================
                    Comment Styling
