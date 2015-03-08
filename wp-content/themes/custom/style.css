@@ -193,7 +193,7 @@ body.page-id-17 {
 
 /* links */
 a {
-  color: #BA209B;
+  color: #492F31;
   text-decoration: none; }
 
 a:hover {
@@ -277,13 +277,15 @@ footer {
   display: inline-block; }
 .bottom .social {
   float: right;
-  display: inline-block; }
+  display: inline-block;
+  padding: 0; }
 
 .tac {
   text-align: center; }
 
-#menu-social {
-  padding: 0; }
+#menu-social .fa.fa-twitter, #menu-social .fa.fa-facebook, #menu-social .fa.fa-envelope-o, #menu-social .fa.fa-mobile {
+  padding: 0;
+  font-size: 18px; }
 
 /* =============================================================================
                    Navigation
@@ -298,7 +300,8 @@ ul.menu {
   text-transform: uppercase;
   height: 0;
   display: none;
-  font: 12px 'Montserrat', sans-serif; }
+  font: 13px 'Montserrat', sans-serif;
+  font-weight: 400; }
 
 ul.menu li {
   display: inline;
@@ -321,14 +324,32 @@ ul.menu li a:hover {
   display: block;
   border-top: 5px solid #fff; }
 
-.fa {
+.fa-coffee {
   background: #fff;
   padding: 15px;
   text-align: center; }
 
-header.top-menu {
-  height: 300px;
-  background: #ccc; }
+.top-menu {
+  height: 400px;
+  background: url('img/coffee-shop2.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Oranienbaum', serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 60px;
+  color: #492F31;
+  margin-top: 80px;
+  margin-bottom: 0px; }
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff; }
 
 /* =============================================================================
                    Comment Styling

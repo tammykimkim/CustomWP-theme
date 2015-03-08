@@ -42,12 +42,20 @@ img.alignright    { padding-left: 5px; }
    ========================================================================== */
    $font-stack: 'Montserrat', sans-serif;
    $white: #fff;
+   $brown: #492F31;
+
+   $font-title: 'Oranienbaum', serif;
 
 // example:
    // body {
    //   font: 100% $font-stack;
    //   color: $white;
    // }
+
+// font-family: 'Oranienbaum', serif;
+// font-family: 'Droid Sans', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Montserrat', sans-serif;
 
 /* =============================================================================
                    Default Styling
@@ -79,7 +87,7 @@ body.page-id-17 {
 
 /* links */
 a {
-  color:#BA209B;
+  color:$brown;
   text-decoration: none;
 }
 
@@ -169,8 +177,9 @@ h1 {
 
 footer {
   clear:both;
+  background: #brown;
   padding: 5px;
-
+  // background: #888;
     .copyright {
       float: left;
     }
@@ -179,10 +188,12 @@ footer {
 .bottom {
   ul.menu {
     display: inline-block;
+    // background: #888;
   }
     .social {
       float: right;
       display: inline-block;
+      padding: 0;
     }
 }
 
@@ -191,7 +202,14 @@ footer {
 }
 
 #menu-social {
-  padding: 0;
+  .fa.fa-twitter,
+  .fa.fa-facebook,
+  .fa.fa-envelope-o,
+  .fa.fa-mobile, {
+    padding: 0;
+    font-size: 18px;
+  }
+
 }
 
 
@@ -211,11 +229,12 @@ footer {
     text-transform: uppercase;
     height: 0;
     display: none;
-    font: 12px $font-stack;
+    font: 13px $font-stack;
+    font-weight: 400;
   }
     ul.menu li {
       display:inline;
-      margin-right: 11px;
+      // margin-right: 11px;
       letter-spacing: 2px;
     }
 
@@ -237,15 +256,33 @@ footer {
     display: block;
     border-top: 5px solid #fff;
   }
-  .fa {
+  .fa-coffee {
     background: #fff;
     padding: 15px;
     text-align: center;
   }
 
-header.top-menu {
-  height: 300px;
-  background: #ccc;
+.top-menu {
+  height: 400px;
+  background: url('img/coffee-shop2.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.title a {
+  text-transform: uppercase;
+  font-family: 'Oranienbaum', serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 60px;
+  color: $fff;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
 

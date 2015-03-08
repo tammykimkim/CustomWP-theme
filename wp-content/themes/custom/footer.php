@@ -3,7 +3,7 @@
   <div class="container tac">
 
     <p class="copyright">
-	    &copy; HackerYou <?php echo date('Y'); ?>
+	    &copy; Tammy Kim, <?php echo date('Y'); ?>
     </p>
 
 		<nav class="top-menu-hidden bottom">

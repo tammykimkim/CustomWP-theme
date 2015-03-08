@@ -18,9 +18,7 @@
 <body <?php body_class(); ?>>
 
 <div class="max-container">
-  <div class="container">
-    
-    <header class="top-menu">
+  <header class="top-menu">
 
       <div>
         <nav class="top-menu-hidden">
@@ -37,13 +35,18 @@
 
     <!-- Add Flexslider here -->
 
-        <h1>
+    <div class="container">
+    
+        <h1 class="title">
           <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
             <?php bloginfo( 'name' ); ?>
           </a>
         </h1>
+        <p class="tagline">
+          <?php bloginfo( 'description' ); ?>
+        </p>
 
+    </div>  <!-- end container -->
 
-    </header><!--/.header-->
-  </div>  <!-- end container -->
+  </header><!--/.header-->
 </div> <!-- end max-container -->

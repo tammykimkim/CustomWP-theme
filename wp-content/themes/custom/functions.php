@@ -44,7 +44,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 // Adding Google Fonts & Font Awesome links
 // Add Google Fonts and Font Awesome
 	function load_fonts() {
-		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Droid+Serif:400,700|Open+Sans:400,600,300,700');
+		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Droid+Sans|Oranienbaum|Open+Sans:400,300,600');
 		wp_enqueue_style('google-fonts');
 
 		wp_register_style('font-awesome', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
