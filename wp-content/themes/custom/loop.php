@@ -19,13 +19,13 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class('drew'); ?>>
 			<h2 class="entry-title">
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?> &#10085;
+          <?php the_title(); ?> 
         </a> 
       </h2>
 			
-			<div class="avatar-bgnd">
+<!-- 			<div class="avatar-bgnd"> -->
 			<!-- adding my avatar -->
-				<?php echo get_avatar( get_the_author_meta('ID')); ?>
+<!-- 				<?php echo get_avatar( get_the_author_meta('ID')); ?> -->
     		
 			<!-- adding the date here -->
 	      Posted By <?php the_author_posts_link(); ?> 

@@ -16,6 +16,27 @@ function theme_setup() {
 	// parameters: (name of image size, width, height, whether to crop it)
 	add_image_size('slider', 1000, 450, true);
 
+// Add custom background image in header area
+// $defaults = array(
+// 	'default-color'          => '',
+// 	'default-image'          => 'img/coffee-beans2.jpg',
+// 	'default-repeat'         => 'false',
+// 	'default-position-x'     => '',
+// 	'default-attachment'     => '',
+// 	'wp-head-callback'       => '_custom_background_cb',
+// 	'admin-head-callback'    => '',
+// 	'admin-preview-callback' => '',
+// );
+// add_theme_support( 'custom-background' );
+
+// Add custom header flexible header
+	// $args = array(
+	// 	'flex-width'    => true,
+	// 	'width'         => 1000,
+	// 	'height'        => 200,
+	// 	'default-image' => get_template_directory_uri() . 'img/coffee-beans2.jpg',
+	// );
+	// add_theme_support( 'custom-header', $args );
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +65,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 // Adding Google Fonts & Font Awesome links
 // Add Google Fonts and Font Awesome
 	function load_fonts() {
-		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Droid+Sans|Oranienbaum|Open+Sans:400,300,600');
+		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Oranienbaum|Open+Sans:300,600,400|Montserrat:400,700');
 		wp_enqueue_style('google-fonts');
 
 		wp_register_style('font-awesome', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');

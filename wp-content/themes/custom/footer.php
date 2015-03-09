@@ -1,16 +1,18 @@
 
-<footer class="max-container">
+<footer class="max-container clearfix">
   <div class="container tac">
 
+		<nav class="bottom">
+
     <p class="copyright">
-	    &copy; Tammy Kim, <?php echo date('Y'); ?>
+	    &copy; Copyright <?php echo date('Y'); ?>, All rights reserved
     </p>
 
-		<nav class="top-menu-hidden bottom">
 		  <?php wp_nav_menu( array(
 		    'container' => false,
 		    'theme_location' => 'primary'
 		  )); ?>
+
 			<div class="social">
 				<?php wp_nav_menu( array(
 			    'container' => false,
@@ -20,10 +22,8 @@
 		</nav>
   </div>
 
-
 </p>
 </footer>
-
 
 <script>
 /* Google Analytics! */

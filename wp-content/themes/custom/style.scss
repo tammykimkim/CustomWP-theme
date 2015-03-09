@@ -24,6 +24,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
    clear: both;
 }
 
+html {
+  height: 100%;
+}
+
 img {
   max-width:100%;
   height: auto;
@@ -40,13 +44,33 @@ img.alignright    { padding-left: 5px; }
 /* =============================================================================
                    Sass Mixins Styling
    ========================================================================== */
-   $font-stack: 'Montserrat', sans-serif;
-   $white: #fff;
-   $brown: #492F31;
+$font-stack: 'Montserrat', sans-serif;
+$font-title: 'Oranienbaum', serif;
 
-   $font-title: 'Oranienbaum', serif;
+$white: #fff;
+$light-grey1: #F7F7F7;
+$light-grey2: #f1f1f1;
+$black: #000;
 
-// example:
+$light-brown: #DEB887;
+// rgb(222,184,135);
+
+$caramel: #A67749;
+// rgb(166,119,73);
+
+$brown: #473732;
+// rgb(71,55,50);
+
+$dark-brown: #322328;
+// rgb(50,35,40);
+
+$peach: #FAA17F;
+// rgb(250,161,127);
+
+$pink: #FD5465;
+// rgb(253,84,101);
+
+   // example:
    // body {
    //   font: 100% $font-stack;
    //   color: $white;
@@ -61,24 +85,36 @@ img.alignright    { padding-left: 5px; }
                    Default Styling
    ========================================================================== */
 
-
 body {
   color:#333;
   font: 100% $font-stack;
+}
+body a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 body.page-id-14 {
   background: goldenrod;
 }
 
+// About Page
 body.page-id-17 {
-  background: thistle;
+  background: url(img/ricepaper_v3.png);
+  margin: 0 auto;
+}
+body.page-template-default {
+  // max-width: 1250px;
+  margin: 0 auto;
 }
 
 .content {
   float:left;
+  padding: 5%;
   width:65%;
   margin-right: 5%;
+  background: $white;
+  // border: 1px solid $brown;
 }
 
 .full {
@@ -92,7 +128,7 @@ a {
 }
 
 a:hover {
-  color: #f1f1f1;
+  color: $pink;
 }
 
 /* paragraphs */
@@ -102,7 +138,7 @@ p {
 
 /*blockquotes*/
 blockquote {
-  background: #F7F7F7;
+  background: $light-grey2;
   margin:0;
   padding:20px;
 }
@@ -136,7 +172,7 @@ ul li,ol li {
 /*PRE*/
 
 pre {
-  background: #F7F7F7;
+  background: $light-grey2;
   padding:10px;
   border-radius: 4px;
   border:1px solid #ccc;
@@ -154,6 +190,10 @@ h1 {
   max-width: 1250px;
   margin: 0 auto;
 }
+.container-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 /* =============================================================================
                    Sidebar
@@ -161,6 +201,10 @@ h1 {
 .sidebar {
   width:30%;
   float:left;
+  padding: 5%;
+  border: 1px solid $caramel;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
   .sidebar ul {
     margin:0;
@@ -170,47 +214,6 @@ h1 {
       list-style: none;
     }
 
-
-/* =============================================================================
-                   Footer
-   ========================================================================== */
-
-footer {
-  clear:both;
-  background: #brown;
-  padding: 5px;
-  // background: #888;
-    .copyright {
-      float: left;
-    }
-}
-
-.bottom {
-  ul.menu {
-    display: inline-block;
-    // background: #888;
-  }
-    .social {
-      float: right;
-      display: inline-block;
-      padding: 0;
-    }
-}
-
-.tac {
-  text-align: center;
-}
-
-#menu-social {
-  .fa.fa-twitter,
-  .fa.fa-facebook,
-  .fa.fa-envelope-o,
-  .fa.fa-mobile, {
-    padding: 0;
-    font-size: 18px;
-  }
-
-}
 
 
 /* =============================================================================
@@ -229,7 +232,7 @@ footer {
     text-transform: uppercase;
     height: 0;
     display: none;
-    font: 13px $font-stack;
+    font: 85% $font-stack;
     font-weight: 400;
   }
     ul.menu li {
@@ -246,7 +249,7 @@ footer {
         padding:10px;
       }
         ul.menu li a:hover {
-          color: #ccc;
+          color: $peach;
         }
 
   .clickme {
@@ -260,44 +263,115 @@ footer {
     background: #fff;
     padding: 15px;
     text-align: center;
+    color: $brown;
   }
 
-.top-menu {
-  height: 400px;
-  background: url('img/coffee-shop2.jpg') no-repeat fixed;
+.bgnd-img {
+  height: 450px;
+  background: url('img/coffee-croissant.jpeg') no-repeat center 50px fixed;
   background-size: cover;
   background-position: 50% 50%;
+  border-bottom: 5px solid $peach;
 }
-.title a {
+
+.title {
   text-transform: uppercase;
   font-family: 'Oranienbaum', serif;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: 60px;
-  color: $fff;
-  margin-top: 80px;
-  margin-bottom: 0px;
+  font-size: 40px;
+  margin-top: 125px;
+  margin-bottom: -10px;
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  a:hover {
+    background-color: rgba(50,35,40,0.5);
+    padding: 3%;
+  }
+
 }
 .tagline {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff;
+  color: $brown;
 }
 
+/* =============================================================================
+                   Footer
+   ========================================================================== */
+
+footer {
+  clear:both;
+  padding: 10px auto;
+  font-size: 75%;
+  background: $white;
+  border-top: 1px solid $caramel;
+    .bottom {
+    }
+    .copyright {
+      float: left;
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+    ul.menu {
+      display: inline-block;
+    }
+    .social {
+      float: right;
+      display: inline-block;
+      padding: 0;
+    }
+}
+
+.tac {
+  text-align: center;
+}
+
+#menu-main-1 {
+  background: $white;
+}
+#menu-social,
+.social, {
+  .fa.fa-twitter,
+  .fa.fa-facebook,
+  .fa.fa-envelope-o,
+  .fa.fa-mobile, {
+    padding: 0;
+    font-size: 18px;
+  }
+  ul.menu {
+    background: $white;
+  }
+}
+
+
+.entry-title {
+  font-size: 36px;
+}
+.entry-meta {
+  font: 14px $font-title;
+}
 
 /* =============================================================================
                    Comment Styling
    ========================================================================== */
 
-#comments .navigation { padding:0 0 18px; }
-h3#comments-title, h3#reply-title {
+#comments .navigation { 
+  padding:0 0 18px; 
+}
+h3#comments-title, 
+h3#reply-title {
   color:#000000;
   font-weight:700;
   font-size:20px;
   margin-bottom:0;
 }
-h3#comments-title { padding:24px 0; }
+h3#comments-title { 
+  padding:24px 0; 
+}
 .commentlist li.comment {
   border-bottom:1px solid #e7e7e7;
   line-height:24px;
@@ -310,10 +384,19 @@ h3#comments-title { padding:24px 0; }
   border-bottom:none;
   margin-bottom:0;
 }
-#comments .comment-body ul, #comments .comment-body ol { margin-bottom:18px; }
-#comments .comment-body p:last-child { margin-bottom:6px; }
-#comments .comment-body blockquote p:last-child { margin-bottom:24px; }
-.commentlist ol { list-style:decimal; }
+#comments .comment-body ul, 
+#comments .comment-body ol { 
+  margin-bottom:18px; 
+  padding: 10px;
+}
+#comments .comment-body p:last-child { 
+  margin-bottom:6px; 
+}
+#comments .comment-body blockquote p:last-child { margin-bottom:24px; 
+}
+.commentlist ol { 
+  list-style:decimal; 
+}
 .commentlist .avatar {
   position:absolute;
   top:4px;
@@ -324,12 +407,11 @@ h3#comments-title { padding:24px 0; }
   border-radius: 50%;
 }
 .avatar-bgnd {
-  background: #F5F5F5;
-  border-radius: 5px;
-  border: 1px solid #d0d0d0;
-  padding: 20px;
+  // background: #F5F5F5;
+  // border-radius: 5px;
+  // border: 1px solid #d0d0d0;
+  // padding: 20px;
 }
-
 
 .comment-author cite {
   color:#000000;
@@ -389,7 +471,7 @@ h3#reply-title { margin:18px 0; }
   font-weight:400;
 }
 #respond .required {
-  color:#ff4b33;
+  color:$pink;
   font-weight:700;
 }
 #respond label {
@@ -423,5 +505,5 @@ p.form-allowed-tags, .nocomments { display:none; }
   list-style:none;
   margin:0;
 }
-.comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover { color:#ff4b33; }
+.comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover { color:$pink; }
 #respond p, #comments-list ul #respond { margin:0; }

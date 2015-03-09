@@ -141,6 +141,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both; }
 
+html {
+  height: 100%; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -177,27 +180,37 @@ body {
   color: #333;
   font: 100% 'Montserrat', sans-serif; }
 
+body a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
 body.page-id-14 {
   background: goldenrod; }
 
 body.page-id-17 {
-  background: thistle; }
+  background: url(img/ricepaper_v3.png);
+  margin: 0 auto; }
+
+body.page-template-default {
+  margin: 0 auto; }
 
 .content {
   float: left;
+  padding: 5%;
   width: 65%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  background: #fff; }
 
 .full {
   width: 100%; }
 
 /* links */
 a {
-  color: #492F31;
+  color: #473732;
   text-decoration: none; }
 
 a:hover {
-  color: #f1f1f1; }
+  color: #FD5465; }
 
 /* paragraphs */
 p {
@@ -205,7 +218,7 @@ p {
 
 /*blockquotes*/
 blockquote {
-  background: #F7F7F7;
+  background: #f1f1f1;
   margin: 0;
   padding: 20px; }
 
@@ -234,7 +247,7 @@ ul li, ol li {
 
 /*PRE*/
 pre {
-  background: #F7F7F7;
+  background: #f1f1f1;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc; }
@@ -250,12 +263,20 @@ h1 {
   max-width: 1250px;
   margin: 0 auto; }
 
+.container-inner {
+  max-width: 960px;
+  margin: 0 auto; }
+
 /* =============================================================================
                    Sidebar
    ========================================================================== */
 .sidebar {
   width: 30%;
-  float: left; }
+  float: left;
+  padding: 5%;
+  border: 1px solid #A67749;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .sidebar ul {
   margin: 0;
@@ -263,29 +284,6 @@ h1 {
 
 .sidebar ul li {
   list-style: none; }
-
-/* =============================================================================
-                   Footer
-   ========================================================================== */
-footer {
-  clear: both;
-  padding: 5px; }
-  footer .copyright {
-    float: left; }
-
-.bottom ul.menu {
-  display: inline-block; }
-.bottom .social {
-  float: right;
-  display: inline-block;
-  padding: 0; }
-
-.tac {
-  text-align: center; }
-
-#menu-social .fa.fa-twitter, #menu-social .fa.fa-facebook, #menu-social .fa.fa-envelope-o, #menu-social .fa.fa-mobile {
-  padding: 0;
-  font-size: 18px; }
 
 /* =============================================================================
                    Navigation
@@ -300,12 +298,11 @@ ul.menu {
   text-transform: uppercase;
   height: 0;
   display: none;
-  font: 13px 'Montserrat', sans-serif;
+  font: 85% 'Montserrat', sans-serif;
   font-weight: 400; }
 
 ul.menu li {
   display: inline;
-  margin-right: 11px;
   letter-spacing: 2px; }
 
 ul.menu li.current_page_item a {
@@ -315,7 +312,7 @@ ul.menu li a {
   padding: 10px; }
 
 ul.menu li a:hover {
-  color: #ccc; }
+  color: #FAA17F; }
 
 .clickme {
   cursor: pointer;
@@ -327,29 +324,74 @@ ul.menu li a:hover {
 .fa-coffee {
   background: #fff;
   padding: 15px;
-  text-align: center; }
+  text-align: center;
+  color: #473732; }
 
-.top-menu {
-  height: 400px;
-  background: url('img/coffee-shop2.jpg') no-repeat fixed;
+.bgnd-img {
+  height: 450px;
+  background: url('img/coffee-croissant.jpeg') no-repeat center 50px fixed;
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  border-bottom: 5px solid #FAA17F; }
 
 .title {
   text-transform: uppercase;
   font-family: 'Oranienbaum', serif;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: 60px;
-  color: #492F31;
-  margin-top: 80px;
-  margin-bottom: 0px; }
+  font-size: 40px;
+  margin-top: 125px;
+  margin-bottom: -10px; }
+  .title a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .title a:hover {
+    background-color: rgba(50, 35, 40, 0.5);
+    padding: 3%; }
 
 .tagline {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff; }
+  color: #473732; }
+
+/* =============================================================================
+                   Footer
+   ========================================================================== */
+footer {
+  clear: both;
+  padding: 10px auto;
+  font-size: 75%;
+  background: #fff;
+  border-top: 1px solid #A67749; }
+  footer .copyright {
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px; }
+  footer ul.menu {
+    display: inline-block; }
+  footer .social {
+    float: right;
+    display: inline-block;
+    padding: 0; }
+
+.tac {
+  text-align: center; }
+
+#menu-main-1 {
+  background: #fff; }
+
+#menu-social .fa.fa-twitter, #menu-social .fa.fa-facebook, #menu-social .fa.fa-envelope-o, #menu-social .fa.fa-mobile, .social .fa.fa-twitter, .social .fa.fa-facebook, .social .fa.fa-envelope-o, .social .fa.fa-mobile {
+  padding: 0;
+  font-size: 18px; }
+#menu-social ul.menu, .social ul.menu {
+  background: #fff; }
+
+.entry-title {
+  font-size: 36px; }
+
+.entry-meta {
+  font: 14px 'Oranienbaum', serif; }
 
 /* =============================================================================
                    Comment Styling
@@ -379,7 +421,8 @@ h3#comments-title {
   margin-bottom: 0; }
 
 #comments .comment-body ul, #comments .comment-body ol {
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  padding: 10px; }
 
 #comments .comment-body p:last-child {
   margin-bottom: 6px; }
@@ -398,12 +441,6 @@ h3#comments-title {
 /* custom styles added to theme */
 .avatar {
   border-radius: 50%; }
-
-.avatar-bgnd {
-  background: #F5F5F5;
-  border-radius: 5px;
-  border: 1px solid #d0d0d0;
-  padding: 20px; }
 
 .comment-author cite {
   color: #000000;
@@ -481,7 +518,7 @@ h3#reply-title {
   font-weight: 400; }
 
 #respond .required {
-  color: #ff4b33;
+  color: #FD5465;
   font-weight: 700; }
 
 #respond label {
@@ -528,7 +565,7 @@ p.form-allowed-tags, .nocomments {
   margin: 0; }
 
 .comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover {
-  color: #ff4b33; }
+  color: #FD5465; }
 
 #respond p, #comments-list ul #respond {
   margin: 0; }
