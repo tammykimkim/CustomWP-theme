@@ -2,17 +2,14 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
-	  <div class="container-inner">
-
-	    <div class="content">
-	    		<?php get_template_part( 'loop', 'index' );	?>
-	    </div> <!--/.content -->
-
-<!--     <?php get_sidebar(); ?> -->
-
-		</div>  <!-- /.container-inner -->
-  </div> <!-- /.container -->
+  <!-- <div class="container">
+	  <div class="container-inner"> -->
+	  <div class="content">
+	    <?php get_template_part( 'loop', 'index' );	?>
+	  </div>
+		<!-- </div>  /.container-inner -->
+  <!-- </div> /.container -->
+    <?php get_sidebar(); ?>
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

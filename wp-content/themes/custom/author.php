@@ -2,6 +2,7 @@
 
 <div class="main">
   <div class="container">
+  <div class="container-inner">
     <div class="content">
 
     <p>
@@ -41,6 +42,7 @@
 
     <?php get_sidebar(); ?>
 
+    </div>  <!-- /.container-inner -->
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 

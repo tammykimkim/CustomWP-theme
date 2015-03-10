@@ -182,24 +182,18 @@ body {
 
 body a {
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+  outline: 0; }
 
 body.page-id-14 {
   background: goldenrod; }
 
 body.page-id-17 {
-  background: url(img/ricepaper_v3.png);
+  background: #dbb6a4;
   margin: 0 auto; }
 
 body.page-template-default {
   margin: 0 auto; }
-
-.content {
-  float: left;
-  padding: 5%;
-  width: 65%;
-  margin-right: 5%;
-  background: #fff; }
 
 .full {
   width: 100%; }
@@ -255,7 +249,7 @@ pre {
 h1 {
   text-align: center; }
 
-.max-container {
+.max-container, .main {
   max-width: 1500px;
   margin: 0 auto; }
 
@@ -267,15 +261,29 @@ h1 {
   max-width: 960px;
   margin: 0 auto; }
 
+.content {
+  float: left;
+  padding: 6%;
+  padding-bottom: 2%;
+  width: 65%;
+  margin-right: 5%; }
+
+.author a, .continue {
+  color: #FD5465; }
+
+.author a:hover {
+  color: #DEB887; }
+
 /* =============================================================================
                    Sidebar
    ========================================================================== */
 .sidebar {
-  width: 30%;
-  float: left;
-  padding: 5%;
-  border: 1px solid #A67749;
-  margin-top: 20px;
+  width: 25%;
+  float: right;
+  padding: 2.5%;
+  border-left: 1px solid #A67749;
+  margin-top: 80px;
+  margin-right: 5%;
   margin-bottom: 20px; }
 
 .sidebar ul {
@@ -285,6 +293,9 @@ h1 {
 .sidebar ul li {
   list-style: none; }
 
+/* =============================================================================
+                   Search
+   ========================================================================== */
 /* =============================================================================
                    Navigation
    ========================================================================== */
@@ -355,6 +366,71 @@ ul.menu li a:hover {
   letter-spacing: 2px;
   color: #473732; }
 
+h2.title {
+  text-transform: uppercase;
+  font-family: 'Oranienbaum', serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #322328;
+  border-bottom: 1px solid #322328; }
+  h2.title a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  h2.title a:hover {
+    background-color: rgba(50, 35, 40, 0.5);
+    padding: 3%; }
+
+/* =============================================================================
+                   Sidebar
+   ========================================================================== */
+.widget-title {
+  text-transform: uppercase;
+  font-size: 100%;
+  letter-spacing: 2px;
+  background: #473732;
+  color: #fff;
+  padding: 10px;
+  font-weight: 400px; }
+
+/* =============================================================================
+                   Contact Form
+   ========================================================================== */
+.wpcf7 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  margin-top: 10px; }
+
+#wpcf7-f117-p2-o1 {
+  background-color: #e1cdce;
+  padding: 5%;
+  margin-top: 20px; }
+
+.wpcf7-submit, input[type=submit] {
+  background: #DEB887;
+  border: 1px solid #473732;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  outline: 0;
+  margin-top: 10px;
+  width: 100%; }
+
+.wpcf7-submit:hover, input[type=submit]:hover {
+  background: #473732;
+  outline: 0; }
+
+input[type=search], .wpcf7-text, .wpcf7-textarea, .wpcf7-form-control {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  border: 1px solid #473732;
+  width: 100%; }
+
 /* =============================================================================
                    Footer
    ========================================================================== */
@@ -388,16 +464,45 @@ footer {
   background: #fff; }
 
 .entry-title {
-  font-size: 36px; }
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: left; }
+  .entry-title a {
+    color: #FD5465; }
 
 .entry-meta {
   font: 14px 'Oranienbaum', serif; }
 
+.entry-content {
+  font: 105% 'Oranienbaum', serif; }
+
+.taxes {
+  clear: both;
+  padding: 10px auto;
+  font-size: 75%;
+  background: #fff;
+  border-top: 1px solid #A67749;
+  width: 100%; }
+
+.continue {
+  color: #FD5465; }
+
 /* =============================================================================
                    Comment Styling
    ========================================================================== */
+.nav-previous {
+  float: left;
+  font-style: italic; }
+
+.nav-next {
+  float: right;
+  font-style: italic; }
+
 #comments .navigation {
   padding: 0 0 18px; }
+
+.comments-area {
+  float: left; }
 
 h3#comments-title, h3#reply-title {
   color: #000000;
@@ -439,9 +544,6 @@ h3#comments-title {
   left: 0; }
 
 /* custom styles added to theme */
-.avatar {
-  border-radius: 50%; }
-
 .comment-author cite {
   color: #000000;
   font-style: normal;
@@ -488,15 +590,6 @@ h3#comments-title {
   font-style: italic;
   font-size: 13px; }
 
-input[type=submit] {
-  color: #333333; }
-
-#respond {
-  margin-top: 24px;
-  border-top: 1px solid #e7e7e7;
-  overflow: hidden;
-  position: relative; }
-
 #respond .comment-notes {
   margin-bottom: 1em; }
 
@@ -524,10 +617,6 @@ h3#reply-title {
 #respond label {
   color: #888888;
   font-size: 12px; }
-
-#respond input {
-  width: 98%;
-  margin: 0 0 9px; }
 
 #respond textarea {
   width: 98%; }

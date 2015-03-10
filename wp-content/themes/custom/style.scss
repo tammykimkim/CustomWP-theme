@@ -50,8 +50,10 @@ $font-title: 'Oranienbaum', serif;
 $white: #fff;
 $light-grey1: #F7F7F7;
 $light-grey2: #f1f1f1;
+$light-grey3: rgba(225, 205, 206, 1);
 $black: #000;
 
+$light-brown2: rgba(219, 182, 164, 1);
 $light-brown: #DEB887;
 // rgb(222,184,135);
 
@@ -92,6 +94,7 @@ body {
 body a {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  outline: 0;
 }
 
 body.page-id-14 {
@@ -100,7 +103,7 @@ body.page-id-14 {
 
 // About Page
 body.page-id-17 {
-  background: url(img/ricepaper_v3.png);
+  background: $light-brown2;
   margin: 0 auto;
 }
 body.page-template-default {
@@ -108,14 +111,6 @@ body.page-template-default {
   margin: 0 auto;
 }
 
-.content {
-  float:left;
-  padding: 5%;
-  width:65%;
-  margin-right: 5%;
-  background: $white;
-  // border: 1px solid $brown;
-}
 
 .full {
   width:100%;
@@ -182,7 +177,8 @@ h1 {
   text-align: center;
 }
 
-.max-container {
+.max-container,
+.main {
   max-width:1500px;
   margin:0 auto;
 }
@@ -194,16 +190,31 @@ h1 {
   max-width: 960px;
   margin: 0 auto;
 }
-
+.content {
+  float:left;
+  padding: 6%;
+  padding-bottom: 2%;
+  width:65%;
+  margin-right: 5%;
+}
+.author a,
+.continue {
+  color: $pink;
+}
+.author a:hover {
+  color: $light-brown;
+}
 /* =============================================================================
                    Sidebar
    ========================================================================== */
 .sidebar {
-  width:30%;
-  float:left;
-  padding: 5%;
-  border: 1px solid $caramel;
-  margin-top: 20px;
+  // font: 100% $font-title;
+  width:25%;
+  float:right;
+  padding: 2.5%;
+  border-left: 1px solid $caramel;
+  margin-top: 80px;
+  margin-right: 5%;
   margin-bottom: 20px;
 }
   .sidebar ul {
@@ -214,7 +225,20 @@ h1 {
       list-style: none;
     }
 
+/* =============================================================================
+                   Search
+   ========================================================================== */
 
+   #search {
+    // The overall style for the search form.
+   }
+   #search {
+    // label 
+   }
+   #searchform {
+
+   // Used to style the label tag, if necessary.
+   }
 
 /* =============================================================================
                    Navigation
@@ -299,6 +323,83 @@ h1 {
   color: $brown;
 }
 
+
+h2.title {
+  text-transform: uppercase;
+  font-family: 'Oranienbaum', serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: $dark-brown;
+  border-bottom: 1px solid $dark-brown;
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  a:hover {
+    background-color: rgba(50,35,40,0.5);
+    padding: 3%;
+  }
+}
+
+/* =============================================================================
+                   Sidebar
+   ========================================================================== */
+
+.widget-title {
+  text-transform: uppercase;
+  font-size: 100%;
+  letter-spacing: 2px;
+  background: $brown;
+  color: $white;
+  padding: 10px;
+  font-weight: 400px;
+}
+/* =============================================================================
+                   Contact Form
+   ========================================================================== */
+.wpcf7 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  margin-top: 10px;
+}
+#wpcf7-f117-p2-o1 {
+    background-color: $light-grey3;
+    // border: 2px solid $brown;
+    padding: 5%;
+    margin-top: 20px;
+}
+.wpcf7-submit,
+input[type=submit] {
+  background: $light-brown;
+  border: 1px solid $brown;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  outline: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+.wpcf7-submit:hover,
+input[type=submit]:hover {
+  background: $brown;
+  outline: 0;
+}
+input[type=search],
+.wpcf7-text,
+.wpcf7-textarea,
+.wpcf7-form-control {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  border: 1px solid $brown;
+  width: 100%;
+}
+
 /* =============================================================================
                    Footer
    ========================================================================== */
@@ -347,21 +448,56 @@ footer {
   }
 }
 
-
 .entry-title {
   font-size: 36px;
+  margin-bottom: 10px;
+  text-align: left;
+  a {
+  color: $pink;
+  }
 }
 .entry-meta {
   font: 14px $font-title;
+}
+.entry-content {
+  font: 105% $font-title;
+}
+.taxes {
+  clear:both;
+  padding: 10px auto;
+  font-size: 75%;
+  background: $white;
+  border-top: 1px solid $caramel;
+  width: 100%;
+}
+.continue {
+  color: $pink;
 }
 
 /* =============================================================================
                    Comment Styling
    ========================================================================== */
-
+.navigation {
+  // display: inline;
+}
+.nav-previous {
+  float: left;
+  font-style: italic;
+}
+.nav-next {
+  float: right;
+  font-style: italic;
+}
 #comments .navigation { 
   padding:0 0 18px; 
 }
+.comments-area {
+  float: left;
+}
+
+
+
+
 h3#comments-title, 
 h3#reply-title {
   color:#000000;
@@ -404,7 +540,7 @@ h3#comments-title {
 }
 /* custom styles added to theme */
 .avatar {
-  border-radius: 50%;
+  // border-radius: 50%;
 }
 .avatar-bgnd {
   // background: #F5F5F5;
@@ -453,13 +589,13 @@ h3#comments-title {
   font-style:italic;
   font-size:13px;
 }
-input[type=submit] { color:#333333; }
-#respond {
-  margin-top:24px;
-  border-top:1px solid #e7e7e7;
-  overflow:hidden;
-  position:relative;
-}
+// input[type=submit] { color:#333333; }
+// #respond {
+//   margin-top:24px;
+//   border-top:1px solid #e7e7e7;
+//   overflow:hidden;
+//   position:relative;
+// }
 #respond .comment-notes { margin-bottom:1em; }
 .form-allowed-tags { line-height:1em; }
 .children #respond { margin:0 48px 0 0; }
@@ -478,10 +614,10 @@ h3#reply-title { margin:18px 0; }
   color:#888888;
   font-size:12px;
 }
-#respond input {
-  width:98%;
-  margin:0 0 9px;
-}
+// #respond input {
+//   width:98%;
+//   margin: 0 9px;
+// }
 #respond textarea { width:98%; }
 #respond dt, #respond dd {
   color:#888888;
