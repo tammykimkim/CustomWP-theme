@@ -6,13 +6,12 @@
 get_header(); 
 ?>
 
-<!--   <div class="container"> -->
-
-    <div class="content">
+    <div class="content-home">
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <h2 class="title"><?php the_title(); ?></h2>  <!-- these are loop specific tags -->
+        <h2 class="title">Welcome</h2>  
+        <!-- these are loop specific tags -->
 <!--         <p><?php echo home_url(); ?></p> -->
 <!--         <p>The url for this page is <?php echo get_permalink(); ?></p> -->
         
@@ -23,7 +22,6 @@ get_header();
 
       </div> <!-- /.content -->
       
-    <?php get_sidebar(); ?> 
-<!--   </div>  --><!-- /.container -->
+<!--     <?php get_sidebar(); ?>  -->
 
 <?php get_footer(); ?>

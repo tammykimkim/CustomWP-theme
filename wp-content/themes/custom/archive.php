@@ -16,7 +16,8 @@
         <?php else : ?>
           Blog Archives
         <?php endif; ?>
-      </h1>
+      </h1
+
 
       <?php
     	/* Since we called the_post() above, we need to

@@ -20,8 +20,9 @@
 <div class="max-container">
   <header class='bgnd-img'>
 
-<!--      <?php get_header_image() ?>
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" class ="header-img" alt="" /> -->
+
+ <?php get_header_image() ?>
+       <!--  <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" class ="header-img" alt="" />  -->
 
       <div>
         <nav class="top-menu-hidden">

@@ -165,6 +165,16 @@ img.alignleft {
 img.alignright {
   padding-left: 5px; }
 
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .clear {
   width: 100%;
   float: left;
@@ -192,6 +202,9 @@ body.page-id-17 {
   background: #dbb6a4;
   margin: 0 auto; }
 
+body.blog {
+  background: #f1f1f1; }
+
 body.page-template-default {
   margin: 0 auto; }
 
@@ -205,6 +218,9 @@ a {
 
 a:hover {
   color: #FD5465; }
+
+a img {
+  border: 0; }
 
 /* paragraphs */
 p {
@@ -254,7 +270,7 @@ h1 {
   margin: 0 auto; }
 
 .container {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .container-inner {
@@ -265,8 +281,7 @@ h1 {
   float: left;
   padding: 6%;
   padding-bottom: 2%;
-  width: 65%;
-  margin-right: 5%; }
+  width: 65%; }
 
 .author a, .continue {
   color: #FD5465; }
@@ -274,15 +289,20 @@ h1 {
 .author a:hover {
   color: #DEB887; }
 
+.content-home {
+  float: left;
+  padding: 5%;
+  padding-bottom: 2%;
+  width: 100%; }
+
 /* =============================================================================
                    Sidebar
    ========================================================================== */
 .sidebar {
-  width: 25%;
+  width: 30%;
   float: right;
   padding: 2.5%;
   border-left: 1px solid #A67749;
-  margin-top: 80px;
   margin-right: 5%;
   margin-bottom: 20px; }
 
@@ -291,7 +311,8 @@ h1 {
   padding: 0; }
 
 .sidebar ul li {
-  list-style: none; }
+  list-style: none;
+  font: 0.9rem 'Open Sans', sans-serif; }
 
 /* =============================================================================
                    Search
@@ -350,7 +371,7 @@ ul.menu li a:hover {
   font-family: 'Oranienbaum', serif;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 125px;
   margin-bottom: -10px; }
   .title a {
@@ -364,14 +385,17 @@ ul.menu li a:hover {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #473732; }
+  color: #473732;
+  font: 1rem 'Montserrat', sans-serif; }
 
 h2.title {
+  background: url('img/bgnd-title.png') no-repeat center center;
+  background-size: contain;
   text-transform: uppercase;
-  font-family: 'Oranienbaum', serif;
+  text-align: center;
+  font: 50px 'Oranienbaum', serif;
   font-weight: normal;
-  letter-spacing: 2px;
-  font-size: 40px;
+  letter-spacing: 0.2rem;
   margin-top: 0px;
   margin-bottom: 30px;
   color: #322328;
@@ -387,12 +411,12 @@ h2.title {
                    Sidebar
    ========================================================================== */
 .widget-title {
+  font: 1rem 'Oranienbaum', serif;
   text-transform: uppercase;
-  font-size: 100%;
   letter-spacing: 2px;
-  background: #473732;
-  color: #fff;
-  padding: 10px;
+  border-bottom: 2px solid #473732;
+  color: #DEB887;
+  padding: 10px 10px 10px 0px;
   font-weight: 400px; }
 
 /* =============================================================================
@@ -401,35 +425,45 @@ h2.title {
 .wpcf7 {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 10px;
   margin-top: 10px; }
 
 #wpcf7-f117-p2-o1 {
-  background-color: #e1cdce;
   padding: 5%;
   margin-top: 20px; }
 
 .wpcf7-submit, input[type=submit] {
-  background: #DEB887;
+  background: #473732;
   border: 1px solid #473732;
-  color: #fff;
-  padding: 10px;
+  color: #DEB887;
+  padding: 15px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   outline: 0;
   margin-top: 10px;
-  width: 100%; }
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border-radius: 5px; }
 
 .wpcf7-submit:hover, input[type=submit]:hover {
   background: #473732;
-  outline: 0; }
+  outline: 0;
+  color: #fff; }
 
 input[type=search], .wpcf7-text, .wpcf7-textarea, .wpcf7-form-control {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px;
-  border: 1px solid #473732;
-  width: 100%; }
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  outline: 0; }
+
+.wpcf7-text, .wpcf7-textarea {
+  background: rgba(221, 183, 138, 0.3);
+  border-radius: 5px; }
 
 /* =============================================================================
                    Footer
@@ -475,12 +509,14 @@ footer {
 
 .entry-content {
   font: 105% 'Oranienbaum', serif; }
+  .entry-content a {
+    font-style: italic;
+    color: #FD5465; }
 
 .taxes {
   clear: both;
   padding: 10px auto;
   font-size: 75%;
-  background: #fff;
   border-top: 1px solid #A67749;
   width: 100%; }
 
@@ -490,13 +526,21 @@ footer {
 /* =============================================================================
                    Comment Styling
    ========================================================================== */
+.navigation {
+  border-bottom: 5px solid #473732; }
+
+.nav-previous a, .nav-next a {
+  font-style: italic;
+  color: #FD5465; }
+
+.nav-previous a:hover, .nav-next a:hover {
+  color: #A67749; }
+
 .nav-previous {
-  float: left;
-  font-style: italic; }
+  float: left; }
 
 .nav-next {
-  float: right;
-  font-style: italic; }
+  float: right; }
 
 #comments .navigation {
   padding: 0 0 18px; }

@@ -65,7 +65,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 // Adding Google Fonts & Font Awesome links
 // Add Google Fonts and Font Awesome
 	function load_fonts() {
-		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . ':fonts.googleapis.com/css?family=Oranienbaum|Open+Sans:300,600,400|Montserrat:400,700');
+		wp_register_style('google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://fonts.googleapis.com/css?family=Oranienbaum|Open+Sans:300,600,400|Montserrat:400,700');
 		wp_enqueue_style('google-fonts');
 
 		wp_register_style('font-awesome', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
@@ -83,8 +83,8 @@ of writing our own script tags in the header and footer. */
  */
 function add_scripts() {
   wp_deregister_script( 'jquery' );
-  wp_enqueue_script('jquery',            'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"',   array(),         '1.11.1',false);
-  wp_enqueue_script('scripts',           get_bloginfo('template_directory') . "/js/scripts.js",                  array('jquery'), '1.0.0', false);
+  wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"', array(),'1.11.1',false);
+  wp_enqueue_script('scripts', get_bloginfo('template_directory') . "/js/scripts.js", array('jquery'), '1.0.0', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_scripts' );
